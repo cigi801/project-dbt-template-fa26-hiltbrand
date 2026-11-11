@@ -13,7 +13,5 @@ models:
   owens_c_m4:
     staging:
       +materialized: view
-      +schema: STAGING
     warehouse:
       +materialized: table
-      +schema: MODELED
