@@ -1,0 +1,23 @@
+
+owens_c_m4:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: STUDENT
+      database: PROJECT_DB
+      schema: STAGING
+      warehouse: STUDENT_WH
+      threads: 8
+
+    prod:
+      type: snowflake
+      account: 'not needed'
+      user: 'not needed'
+      role: STUDENT
+      database: PROJECT_DB
+      schema: MODELED
+      warehouse: STUDENT_WH
+      threads: 8
